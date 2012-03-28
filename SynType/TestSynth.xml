@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<synthesis>
+  <header>
+    <username>Richard Peck</username>
+    <creationdate>2010/04/08</creationdate>
+    <idnumber>000001</idnumber>
+    <idref>test</idref>
+  </header>
+  <edit0>
+    <editheader>
+      <editdate>2010/04/08</editdate>
+    </editheader>
+      <reactants count ="1">
+        <reactant>
+          <fileid>83781</fileid>
+          <localid>rc1</localid>
+          <name>benzaldehyde</name>
+          <refid>aldehyde</refid>
+          <formula>C7H6O</formula>
+          <state>solid</state>
+          <density temp="20">null</density>
+          <islimiting>true</islimiting>
+          <mols unit="mmol">57</mols>
+          <mass unit="g">6</mass>
+          <volume>null</volume>
+        </reactant>
+        <reactant>
+          <fileid>12377</fileid>
+          <localid>rc2</localid>
+          <name>pyrrolidine</name>
+          <refid>amine</refid>
+          <formula>C4H9N</formula>
+          <state>liquid</state>
+          <density temp="20">0.866</density>
+          <islimiting>false</islimiting>
+          <mols unit="mmol">68</mols>
+          <mass unit="g">null</mass>
+          <volume unit="ml">5.66</volume>
+        </reactant>
+      </reactants>
+      <reagents count="1">
+        <reagent>
+          <fileid>01294</fileid>
+          <localid>rg1</localid>
+          <name>tert-butyl hydrogenperoxide</name>
+          <refid>TBHP</refid>
+          <formula>C4H10O2</formula>
+          <state>liquid</state>
+          <density>0.94</density>
+          <islimiting>false</islimiting>
+          <mols unit="mmol">74</mols>
+          <mass unit="g">null</mass>
+          <volume unit="ml">12.4</volume>
+        </reagent>
+      </reagents>
+      <products count ="2">
+        <product>
+          <fileid>22389</fileid>
+          <localid>p1</localid>
+          <name>N-benzoyl pyrrolidine</name>
+          <refid>product</refid>
+          <formula>C11H12N</formula>b
+          <state>solid</state>
+          <density>null</density>
+          <istarget>true</istarget>
+          <mols unit="mmol">50</mols>
+          <mass unit ="g">8.7</mass>
+          <volume unit="ml">null</volume>
+        </product>
+      </products>
+    <solvents>
+      <solvent>
+        <name>acetonitrile</name>
+        <refid>MeCN</refid>
+        <molweight></molweight>
+        <volume unit ="g/ml"></volume>
+      </solvent>
+    </solvents>
+    <procedure>
+      To a mixture of turkey juice anddd sweet basil and /rc1 
+    </procedure>
+  </edit0>
+  <edit1></edit1>
+  <edit2></edit2>
+  <moldata fileid="83781">
+  -ISIS-  06021015072D
+
+  9  9  0  0  0  0  0  0  0  0999 V2000
+   -0.1306    0.4042    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1318   -0.4232    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5831   -0.8360    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2995   -0.4227    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.2966    0.4078    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.5813    0.8170    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0d
+    0.5750    1.6458    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.1583    2.2333    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.1417    2.0583    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+  4  5  1  0  0  0  0
+  2  3  1  0  0  0  0
+  5  6  2  0  0  0  0
+  6  1  1  0  0  0  0
+  1  2  2  0  0  0  0
+  6  7  1  0  0  0  0
+  3  4  2  0  0  0  0
+  7  8  1  0  0  0  0
+  7  9  2  0  0  0  0
+M  END
+  </moldata>
+  <moldata fileid="12377">
+  -ISIS-  06031001052D
+
+  5  5  0  0  0  0  0  0  0  0999 V2000
+   -1.4084   -2.0292    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.5834   -2.0292    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.3266   -1.2451    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.9959   -0.7583    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.6609   -1.2451    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  1  0  0  0  0
+  2  3  1  0  0  0  0
+  3  4  1  0  0  0  0
+  4  5  1  0  0  0  0
+  5  1  1  0  0  0  0
+M  END
+  </moldata>
+  <moldata fileid="01294">
+  -ISIS-  06031015302D
+
+  7  6  0  0  0  0  0  0  0  0999 V2000
+   -3.5333   -2.3083    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.8208   -1.8917    0.0000 C   0  0  3  0  0  0  0  0  0  0  0  0
+   -3.0375   -1.0917    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.4125   -1.1750    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.2375   -2.4750    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5250   -2.0583    0.0000 O   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.5292   -1.2333    0.0000 H   0  0  0  0  0  0  0  0  0  0  0  0
+  2  4  1  0  0  0  0
+  2  5  1  0  0  0  0
+  2  3  1  0  0  0  0
+  5  6  1  0  0  0  0
+  1  2  1  0  0  0  0
+  6  7  1  0  0  0  0
+M  END
+  </moldata>
+  <moldata fileid="22389">Untitled Document-1
+  ChemDraw08081017492D
+
+ 12 13  0  0  0  0  0  0  0  0999 V2000
+   -2.1367    0.2597    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -2.1367   -0.5653    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4222   -0.9778    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7077   -0.5653    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -0.7077    0.2597    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+   -1.4222    0.6722    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.0067    0.6722    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    0.8036    0.4586    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.0993   -0.3116    0.0000 N   0  0  0  0  0  0  0  0  0  0  0  0
+    1.9231   -0.2684    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    2.1367    0.5285    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+    1.4448    0.9778    0.0000 C   0  0  0  0  0  0  0  0  0  0  0  0
+  1  2  2  0      
+  2  3  1  0      
+  3  4  2  0      
+  4  5  1  0      
+  5  6  2  0      
+  6  1  1  0      
+  5  7  1  0      
+  7  8  1  0      
+  8  9  1  0      
+  9 10  1  0      
+ 10 11  1  0      
+ 11 12  1  0      
+ 12  8  1  0      
+M  END
+  </moldata>
+  
+</synthesis>
+
+

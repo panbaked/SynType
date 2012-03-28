@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3B3F8C3-5510-4DE1-8900-C5B17CED3477}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SynType</RootNamespace>
+    <AssemblyName>SynType</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ObjectListView, Version=2.5.0.26135, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\ObjectListView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCompoundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCompoundForm.Designer.cs">
+      <DependentUpon>AddCompoundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chemical Classes\Bond.cs" />
+    <Compile Include="Chemical Classes\Compound.cs" />
+    <Compile Include="Chemical Classes\FormulaParser.cs" />
+    <Compile Include="Chemical Classes\Fragment.cs" />
+    <Compile Include="Chemical Classes\Molecule.cs" />
+    <Compile Include="Chemical Classes\Node.cs" />
+    <Compile Include="Chemical Classes\PeriodicTable.cs" />
+    <Compile Include="Chemical Classes\Procedure.cs" />
+    <Compile Include="Chemical Classes\Solution.cs" />
+    <Compile Include="Chemical Classes\Synthesis.cs" />
+    <Compile Include="File ReadWrite\CDX\CDXDataTypes.cs" />
+    <Compile Include="File ReadWrite\CDX\CDXEnumerations.cs" />
+    <Compile Include="File ReadWrite\CDX\CDXFileReader.cs" />
+    <Compile Include="File ReadWrite\FFManager.cs" />
+    <Compile Include="File ReadWrite\FileHelperClasses.cs" />
+    <Compile Include="File ReadWrite\MolFileReader.cs" />
+    <Compile Include="File ReadWrite\MolFileWriter.cs" />
+    <Compile Include="File ReadWrite\SynType\SynTypeFileReader.cs" />
+    <Compile Include="File ReadWrite\SynType\SynTypeFileWriter.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputDialog.Designer.cs">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Math Classes\BoundingBox.cs" />
+    <Compile Include="Math Classes\Math.cs" />
+    <Compile Include="Math Classes\Unit.cs" />
+    <Compile Include="MolViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MolViewer.Designer.cs">
+      <DependentUpon>MolViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program Classes\Project.cs" />
+    <Compile Include="Program Classes\StartupInfo.cs" />
+    <Compile Include="Program Classes\SynthesisDirectory.cs" />
+    <Compile Include="Program Classes\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReactionListViewTabPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReactionListViewTabPage.Designer.cs">
+      <DependentUpon>ReactionListViewTabPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReactionViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReactionViewer.Designer.cs">
+      <DependentUpon>ReactionViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabPageControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabPageControl.Designer.cs">
+      <DependentUpon>TabPageControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCompoundForm.resx">
+      <DependentUpon>AddCompoundForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputDialog.resx">
+      <DependentUpon>InputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MolViewer.resx">
+      <DependentUpon>MolViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReactionListViewTabPage.resx">
+      <DependentUpon>ReactionListViewTabPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReactionViewer.resx">
+      <DependentUpon>ReactionViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPageControl.resx">
+      <DependentUpon>TabPageControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dlls\ObjectListView.dll" />
+    <Content Include="periodic.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestSynth.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
